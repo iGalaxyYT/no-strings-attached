@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "nostringsattached",
+  "version": "${version}",
+  "name": "No Strings Attached",
+  "description": "Hide string and other blocks when not holding them",
+  "authors": [
+    "iGalaxy"
+  ],
+  "contact": {
+    "homepage": "https://igalaxy.dev",
+    "sources": "https://github.com/iGalaxyYT/no-strings-attached"
+  },
+  "license": "MIT",
+  "icon": "assets/nostringsattached/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.igalaxy.nostringsattached.fabric.FabricEntrypoint"
+    ],
+    "modmenu": [
+      "dev.igalaxy.nostringsattached.fabric.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "nostringsattached.mixins.json",
+    "nostringsattached-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "cloth-config2": ">=6.0.0"
+  },
+  "suggests": {
+    "modmenu": ">=3.0.0"
+  }
+}

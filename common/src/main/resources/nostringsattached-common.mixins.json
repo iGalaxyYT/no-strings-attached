@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "dev.igalaxy.nostringsattached.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "client": [
+    "BlockStateMixin",
+    "LocalPlayerMixin"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
