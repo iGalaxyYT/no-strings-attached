@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo
 
 @Mixin(ClientPlayerEntity::class)
 class ClientPlayerEntityMixin {
-    @Inject(at = [At("HEAD")], method = ["init"])
+    @Inject(at = [At("HEAD")], method = ["method_5773()V"])
     private fun init(ci: CallbackInfo) {
         NoStringsAttached.clientPlayerEntity = this as ClientPlayerEntity;
     }

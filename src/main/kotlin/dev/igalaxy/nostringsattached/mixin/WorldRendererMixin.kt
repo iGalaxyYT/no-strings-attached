@@ -1,6 +1,5 @@
 package dev.igalaxy.nostringsattached.mixin
 
-import dev.igalaxy.nostringsattached.NoStringsAttached
 import dev.igalaxy.nostringsattached.NoStringsAttached.Companion.config
 import dev.igalaxy.nostringsattached.NoStringsAttached.Companion.dimension
 import dev.igalaxy.nostringsattached.NoStringsAttached.Companion.selectedItem
@@ -17,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo
 
 @Mixin(WorldRenderer::class)
 class WorldRendererMixin {
-    @Inject(at = [At("HEAD")], method = ["renderLayer"], cancellable = true)
+    @Inject(at = [At("HEAD")], method = ["method_3251(Lnet/minecraft/class_1921;Lnet/minecraft/class_4587;DDDLnet/minecraft/class_1159;)V"], cancellable = true)
     private fun renderLayer(renderLayer: RenderLayer, matrices: MatrixStack, cameraX: Double, cameraY: Double, cameraZ: Double, positionMatrix: Matrix4f, ci: CallbackInfo) {
         if (!config.enableMod) return;
         if (renderLayer == RenderLayer.getTripwire()) {
