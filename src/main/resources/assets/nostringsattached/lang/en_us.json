@@ -1,0 +1,11 @@
+{
+  "text.autoconfig.nostringsattached.title": "No Strings Attached Config",
+
+  "text.autoconfig.nostringsattached.option.enableMod": "Enable Mod",
+
+  "text.autoconfig.nostringsattached.option.showWhenHolding": "Show When Holding String",
+
+  "text.autoconfig.nostringsattached.option.hideInOverworld": "Hide in Overworld",
+  "text.autoconfig.nostringsattached.option.hideInNether": "Hide in Nether",
+  "text.autoconfig.nostringsattached.option.hideInEnd": "Hide in The End"
+}
